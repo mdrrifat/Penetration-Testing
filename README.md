@@ -5,10 +5,9 @@ Penetration testing, often abbreviated as "pen testing," is a cybersecurity prac
 - Black Box Testing: Testers have no prior knowledge of the system being tested.
 - White Box Testing: Testers have full knowledge of the system, including architecture and source code.
 - Gray Box Testing: Testers have partial knowledge of the system, often mirroring the knowledge level of an insider.
-
-- [ ] Follow the checklist
       
-# Penetration Testing Checklist: https://github.com/mdrrifat/Penetration-Testing-Checklist
+# Penetration Testing Checklist: 
+- https://github.com/mdrrifat/Penetration-Testing-Checklist
 
 - [ ] Basic SQL Injection                                                                                                      
 - [ ] Havij                                                                                                                               
