@@ -198,116 +198,149 @@ Cross-Site Request Forgery (CSRF) is a cybersecurity vulnerability that occurs w
 - store-Deliver exp to victime
 done
 
-# Kali Linux Tools    
+# Kali Linux More Useful Tools    
 Kali Linux is a specialized Linux distribution designed for cybersecurity and penetration testing purposes. It is one of the most widely used operating systems by security professionals, ethical hackers, and penetration testers for conducting security assessments, vulnerability testing, and other related tasks. 
 
-Nmap
-Port scan, os, version detection
-nmap www.geeksforgeeks.org
-nmap 172.217.27.174
-nmap -v www.geeksforgee [-v option enables verbose mode]
-To scan whole subnet  
+- [ ] Nmap: Port scan, os, version detection
+- nmap www.geeksforgeeks.org
+- nmap 172.217.27.174
+- nmap -v www.geeksforgee [-v option enables verbose mode]
+- To scan whole subnet:  
      nmap 103.76.228.*
-To scan specific range of IP address
+- To scan specific range of IP address:
      nmap 192.168.29.1-20
-nmap -p 1-20 192.168.1.1 [range of port scan]
-Most popular port scanning
-nmap -sS 172.217.27.174
-Open port
+- nmap -p 1-20 192.168.1.1 [range of port scan]
+- Most popular port scanning:
+- nmap -sS 172.217.27.174
+- Open port:
 nmap -open 172.217.27.174
-Nmap -sC -sV = [-sC=deafult , -sV=service version]
+- Nmap -sC -sV = [-sC=deafult , -sV=service version]
 
-sqlmap
-sqli
-sqlmap -u http://testphp.vulnweb.com/ --crawl 2
-ffuf
-Admin panel fuzzing
+- [ ] sqlmap: sqli
+- sqlmap -u http://testphp.vulnweb.com/ --crawl 2
+  
+- [ ] ffuf: Admin panel fuzzing
+- Admin panel/cpanel find
+- Admin panel fuzzing word list
+- Nano a.txt
+- Cat a.txt login.txt | sort -u -o new.txt     [sorting]
+- ffuf -u https://www.hotelone.com.pk/FUZZ -w /root/wlist/login.txt -mc 200
+- ffuf -u <target> -w <wordlist>
 
-Admin panel/cpanel find
-Admin panel fuzzing word list
-Nano a.txt
-Cat a.txt login.txt | sort -u -o new.txt     [sorting]
-ffuf -u https://www.hotelone.com.pk/FUZZ -w /root/wlist/login.txt -mc 200
-ffuf -u <target> -w <wordlist>
-Hashcat
-Hash password
-https://hashcat.net/hashcat/
-Hash-identifier
-wordpress hass pass check
+- [ ] Hashcat: Hash password
+- https://hashcat.net/hashcat/
+- Hash-identifier
 
-Johntheripper
-Password cracker
-john pass.txt -w=/root/Downloads/rockyou.txt
+- [ ] Johntheripper: Password cracker
+- john pass.txt -w=/root/Downloads/rockyou.txt
 
-Hashcat
-Password recovery
+- [ ] Hashcat: Password recovery
 
-Reconftw
-Website scan - url
-reconftw -t <target>
-reconftw -a <target>
-./reconftw.sh -d testphp.vulnweb.com
-Dirsearch
-Discovery scan
-Python3 dirsearch.py -u link
+- [ ] Reconftw: Website scan - url
+- reconftw -t <target>
+- reconftw -a <target>
+- ./reconftw.sh -d testphp.vulnweb.com
 
-Gospider
-croll-site 
-gospider -q -s "https://google.com/"
-Hakrawler
-web crawler & admin page find
-echo https://google.com | hakrawler
-cat urls.txt | hakrawler
-cat urls.txt | hakrawler -proxy http://localhost:8080
-Waybackurls
-all site links scan-find admin-wp-content
-Waybackurls link >>url.txt [save links url.txt]
+- [ ] Dirsearch: Discovery scan
+- Python3 dirsearch.py -u link
 
-SecLists
-word list
-discovery-web content -login fuzz.txt
-Mkdir wlist 
-Cd wlist
-wget lint [raw] -O login.txt
-Cat login.txt | wc [see word and line]
-katana
-Web crawler
-Katana -u link
-Emailfinder
-Email finder
-emailfinder -d domain.com 
-emailfinder -d domain.com -p http://127.0.0.1:8080
-Metafinder 
+- [ ] Gospider: croll-site 
+- gospider -q -s "https://google.com/"
 
+- [ ] Hakrawler: web crawler & admin page find
+- echo https://google.com | hakrawler
+- cat urls.txt | hakrawler
+- cat urls.txt | hakrawler -proxy http://localhost:8080
+  
+- [ ] Waybackurls: all site links scan-find admin-wp-content
+-Waybackurls link >>url.txt [save links url.txt]
 
-metafinder -d domain.com -l 20 -o folder [-t 10] -go -bi -ba
-ParamSpider
-Crawling
-paramspider -d example.com
-Metasploit
+- [ ] SecLists: word list
+- discovery-web content -login fuzz.txt
+- Mkdir wlist 
+- Cd wlist
+- wget lint [raw] -O login.txt
+- Cat login.txt | wc [see word and line]
 
+- [ ] katana: Web crawler
+- Katana -u link
 
-Systemctl start postgresql
-msfconsole 
-crul
-version/
-server
-curl -I http://example.com
-Gau | gf patterns
+- [ ] Emailfinder: Email finder
+- emailfinder -d domain.com 
+- emailfinder -d domain.com -p http://127.0.0.1:8080
 
+- [ ] Metafinder 
+- metafinder -d domain.com -l 20 -o folder [-t 10] -go -bi -ba
 
-echo "https://testphp.vulnweb.com/" | gau | gf xss >> /root/Desktop/xss.txt
-echo "http://testphp.vulnweb.com/" | gau | gf sqli | tee -a /root/Desktop/sqli.txt 
-Tee -a = show
-Nikto
-Web server scan
-nikto -h <target_host>
+- [ ] ParamSpider: Crawling
+- paramspider -d example.com
 
+- [ ] Metasploit
+- Systemctl start postgresql
+- msfconsole 
 
-Maltego
-OSINT
-https://www.maltego.com/
-Burpsuit open
+- [ ] crul: version/server
+- curl -I http://example.com
 
+- [ ] Gau | gf patterns
+- echo "https://testphp.vulnweb.com/" | gau | gf xss >> /root/Desktop/xss.txt
+- echo "http://testphp.vulnweb.com/" | gau | gf sqli | tee -a /root/Desktop/sqli.txt 
+- Tee -a = show
 
-   
+- [ ] Nikto: Web server scan
+- nikto -h <target_host>
+
+- [ ] Maltego : OSINT
+- https://www.maltego.com/
+
+# Others Tools
+
+- [ ] Basic Penetration Testing Tools
+- Metasploit Framework - World's most used penetration testing software
+- Burp Suite - An integrated platform for performing security testing of web applications
+- ExploitPack - Graphical tool for penetration testing with a bunch of exploits
+
+- [ ] Vulnerability Scanners
+- Nexpose - Vulnerability Management & Risk Management Software
+- Nessus - Vulnerability, configuration, and compliance assessment
+- Nikto - Web application vulnerability scanner
+- OpenVAS - Open Source vulnerability scanner and manager
+- OWASP Zed Attack Proxy - Penetration testing tool for web applications
+
+- [ ] Network Tools
+- nmap - Free Security Scanner For Network Exploration & Security Audits
+- pig - A Linux packet crafting tool
+- tcpdump/libpcap - A common packet analyzer that runs under the command line
+- Wireshark - A network protocol analyzer for Unix and Windows
+- Network Tools - Different network tools: ping, lookup, whois, etc
+
+- [ ] Web exploitation
+- WPScan - Black box WordPress vulnerability scanner
+- SQLmap - Automatic SQL injection and database takeover tool
+- weevely3 - Weaponized web shell
+- Wappalyzer - Wappalyzer uncovers the technologies used on websites
+
+- [ ] Hex Editors
+- HexEdit.js - Browser-based hex editing
+- Hexinator (commercial) - World's finest Hex Editor
+- HxD - Freeware Hex Editor and Disk Editor
+
+- [ ] Crackers
+- John the Ripper - Fast password cracker
+- Online MD5 cracker - Online MD5 hash Cracker
+- Hashcat - The more fast hash cracker
+- THC Hydra - Another Great Password Cracker
+
+- [ ] OSInt Tools
+- Maltego - Proprietary software for open source intelligence and forensics, from Paterva.
+- theHarvester - E-mail, subdomain and people names harvester
+- creepy - A geolocation OSINT tool
+- metagoofil - Metadata harvester
+- Google Hacking Database - a database of Google dorks; can be used for recon
+- Censys - Collects data on hosts and websites through daily ZMap and ZGrab scans
+- Shodan - Shodan is the world's first search engine for Internet-connected devices
+- recon-ng - A full-featured Web Reconnaissance framework written in Python
+- github-dorks - CLI tool to scan github repos/organizations for potential sensitive information leak
+- vcsmap - A plugin-based tool to scan public version control systems for sensitive information
+- Spiderfoot - multi-source OSINT automation tool with a Web UI and report visualizations
+
