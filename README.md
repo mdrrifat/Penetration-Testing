@@ -9,7 +9,7 @@ Penetration testing, often abbreviated as "pen testing," is a cybersecurity prac
 # Penetration Testing Checklist: 
 - https://github.com/mdrrifat/Penetration-Testing-Checklist
 
-- [ ] Basic SQL Injection                                                                                                      
+- [ ] [Basic SQL Injection]                                                                                                      
 - [ ] Havij                                                                                                                               
 - [ ] OSINT                                                                                                                       
 - [ ] XSS Vulnerability                                                                                                   
@@ -22,7 +22,7 @@ Penetration testing, often abbreviated as "pen testing," is a cybersecurity prac
 - [ ] CSRF Vulnerability                                                                                                    
 - [ ] Kali Linux Tools                                                                                                                                                                                                                     
  
-# Basic SQL Injection                                                                                                      
+# (Basic SQL Injection)                                                                                                      
 SQL injection is a code injection technique used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution. SQL injection must exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed.
 
 Use This in Username and Password:
