@@ -1,18 +1,18 @@
 # Penetration-Testing
 
-* Penetration Testing Checklist
+* Penetration Testing Checklist: https://github.com/mdrrifat/Penetration-Testing-Checklist
 
-1: Basic SQL Injection                                                                                                      
-2: Havij                                                                                                                               
-3: OSINT                                                                                                                       
-4: XSS Vulnerability                                                                                                   
-5: Season Hijacking                                                                                                  
-6: Manual SQL Injection                                                                                              
-7: SQLi WAF                                                                                                            
-8: LFI Vulnerability                                                                                                 
-9: Advance LFI (LFI to RCE)                                                                                     
-10: Web Shell Upload                                                                                                   
-11: CSRF Vulnerability                                                                                                    
-12: Kali Linux                                                                                                                  
-13: Penetration Testing                                                                                                     
+[ ] Basic SQL Injection                                                                                                      
+[ ] Havij                                                                                                                               
+[ ] OSINT                                                                                                                       
+[ ] XSS Vulnerability                                                                                                   
+[ ] Season Hijacking                                                                                                  
+[ ] Manual SQL Injection                                                                                              
+[ ] SQLi WAF                                                                                                            
+[ ] LFI Vulnerability                                                                                                 
+[ ] Advance LFI (LFI to RCE)                                                                                     
+[ ] Web Shell Upload                                                                                                   
+[ ] CSRF Vulnerability                                                                                                    
+[ ] Kali Linux                                                                                                                  
+[ ] Penetration Testing                                                                                                     
  
